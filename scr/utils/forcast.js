@@ -10,7 +10,7 @@ const forcast = (latitude,longitude,callback)=>{
         callback('Unable to get forcast!',undefined)
     }else{
         callback(undefined,
-            'The weather is ' + body.currently.summary+'. It is currently '+ body.currently.temperature +' degrees out, and there is ' + body.currently.precipProbability +'% chance of rain '
+            'The weather is ' + body.currently.summary+'. It is currently '+ body.currently.temperature +' degrees out,with a windspeed of '+ body.currently.windSpeed+' and there is ' + body.currently.precipProbability +'% chance of rain '
         
     )
 
